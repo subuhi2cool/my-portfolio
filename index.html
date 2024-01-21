@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Subuhi Begum - Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  <body>
+    <header>
+      <nav>
+        <div class="left">Subuhi's Portfolio</div>
+       
+      </nav>
+    </header>
+    <main>
+      <section class="firstSection">
+        <div class="leftSection">
+          Hi, My name is <span class="text-purple">Subuhi</span>
+          <div>and I am a passionate</div>
+          <span id="element"></span>
+          <div class="buttons">
+            <button class="btn" onclick="downloadResume()">
+              Download Resume
+            </button>
+            <a href="https://github.com/subuhi2cool" class="btn" target="_blank"
+              >Visit GitHub</a
+            >
+          </div>
+        </div>
+        <div class="rightSection">
+          <img src="image/img.jpg" alt="" />
+        </div>
+      </section>
+      <hr />
+      <section class="secondSection">
+       <h1>Acquired Skills</h1>       
+        <div class="image-grid">
+    <div class="image-item">
+        <img src="image/html.png" alt="HTML Image">
+    </div>
+     <div class="image-item">
+        <img src="image/css.png" alt="CSS Image">
+    </div>
+    
+    <div class="image-item">
+        <img src="image/js.png" alt="js Image">
+    </div>
+      </section>
+    </main>
+
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d230660.45187482997!2d81.63676744781661!3d25.402482061979363!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398534c9b20bd49f%3A0xa2237856ad4041a!2sPrayagraj%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1705518025950!5m2!1sen!2sin"
+      width="100%"
+      height="400"
+      style="border: 0"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
+    <footer>
+      <div class="footer">
+        <div class="footer-left">
+          <h3>Subuhi's Developer Portfolio</h3>
+        </div>
+       
+      <div class="footer-center">
+        Copyright &#169; www.subuhisportfolio.com | All rights reserved
+      </div>
+
+       <div class="footer-right">
+                  <a href="https://www.linkedin.com/in/subuhi-begum-36804647/"  target="_blank">
+                    <img src="image/linkedin.png" alt="linkedin" class="slogo">
+                </a>
+            
+                <a href="https://facebook.com" target="_blank">
+                    <img src="image/facebook.png" alt="fb" class="slogo">
+                </a>
+              
+                <a href="https://twitter.com" target="_blank">
+                    <img src="image/twitter.png" alt="twitter" class="slogo">
+                </a>
+                    
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <!-- Setup and start animation! -->
+    <script>
+      var typed = new Typed("#element", {
+        strings: [
+          "Web App Developer",
+          "Javascript Developer",
+          "ReactJS Developer",
+        ],
+        typeSpeed: 50,
+      });
+
+      function downloadResume() {
+        var resumeUrl =
+          "https://drive.google.com/file/d/1nFY48-JH13twS6e7-yMkOMG4l5e2Q_5e/view?usp=sharing";
+        window.open(resumeUrl, "_blank");
+      }
+    </script>
+  </body>
+</html>
